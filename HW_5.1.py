@@ -4,7 +4,7 @@ import string; import keyword
 
 
 user_variable = input("Enter the variable's name: ")
-# user_variable =  "____" 
+# user_variable =  "___" 
 # user_variable =  "get value" 
 # user_variable =  "get!value" 
 # user_variable =  "get_Value" 
@@ -21,11 +21,7 @@ has_space = True if " " in user_variable else False
 is_keyword = True if user_variable in keyword.kwlist else False
 
 # check if has double underline ("__")
-if len(user_variable) == 1:
-    has_duoble_underline = False
-else:
-    find_underline = user_variable.find("_")
-    has_duoble_underline = True if user_variable[find_underline + 1] == "_" else False
+has_duoble_underline = True if "__" in user_variable else False
 
 # check if has punctuation except of "_"
 for i in string.punctuation:
