@@ -8,7 +8,7 @@ my_string = "s" * 138 + "mmmmm"
 # my_string = "i like python community!"
 # my_string = "Should, I. subscribe? Yes!"
 
-print(my_string, len(my_string), sep="\n")
+# print(my_string, len(my_string), sep="\n")
 
 lst_my_string = list(my_string)
 
